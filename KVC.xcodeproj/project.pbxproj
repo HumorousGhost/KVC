@@ -15,6 +15,7 @@
 		987C670525467EE600F4AE81 /* KVCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 987C670425467EE600F4AE81 /* KVCTests.m */; };
 		987C671025467EE600F4AE81 /* KVCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 987C670F25467EE600F4AE81 /* KVCUITests.m */; };
 		987C672225467F2600F4AE81 /* NSObject+KVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 987C672125467F2600F4AE81 /* NSObject+KVC.m */; };
+		D3386E2A2897B348008E4AB1 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = D3386E292897B348008E4AB1 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		987C671125467EE600F4AE81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		987C672025467F2600F4AE81 /* NSObject+KVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVC.h"; sourceTree = "<group>"; };
 		987C672125467F2600F4AE81 /* NSObject+KVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVC.m"; sourceTree = "<group>"; };
+		D3386E282897B348008E4AB1 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		D3386E292897B348008E4AB1 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,12 +106,13 @@
 		987C66EC25467EE200F4AE81 /* KVC */ = {
 			isa = PBXGroup;
 			children = (
+				D3386E262897B311008E4AB1 /* Source */,
 				987C66ED25467EE200F4AE81 /* AppDelegate.h */,
 				987C66EE25467EE200F4AE81 /* AppDelegate.m */,
 				987C66F025467EE200F4AE81 /* ViewController.h */,
 				987C66F125467EE200F4AE81 /* ViewController.m */,
-				987C672025467F2600F4AE81 /* NSObject+KVC.h */,
-				987C672125467F2600F4AE81 /* NSObject+KVC.m */,
+				D3386E282897B348008E4AB1 /* Person.h */,
+				D3386E292897B348008E4AB1 /* Person.m */,
 				987C66F325467EE600F4AE81 /* Assets.xcassets */,
 				987C66F525467EE600F4AE81 /* Main.storyboard */,
 				987C66F825467EE600F4AE81 /* Info.plist */,
@@ -134,6 +138,23 @@
 				987C671125467EE600F4AE81 /* Info.plist */,
 			);
 			path = KVCUITests;
+			sourceTree = "<group>";
+		};
+		D3386E262897B311008E4AB1 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D3386E272897B324008E4AB1 /* KVC */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		D3386E272897B324008E4AB1 /* KVC */ = {
+			isa = PBXGroup;
+			children = (
+				987C672025467F2600F4AE81 /* NSObject+KVC.h */,
+				987C672125467F2600F4AE81 /* NSObject+KVC.m */,
+			);
+			path = KVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +287,7 @@
 			files = (
 				987C672225467F2600F4AE81 /* NSObject+KVC.m in Sources */,
 				987C66F225467EE200F4AE81 /* ViewController.m in Sources */,
+				D3386E2A2897B348008E4AB1 /* Person.m in Sources */,
 				987C66FA25467EE600F4AE81 /* main.m in Sources */,
 				987C66EF25467EE200F4AE81 /* AppDelegate.m in Sources */,
 			);
@@ -433,7 +455,7 @@
 				CODE_SIGN_ENTITLEMENTS = KVC/KVC.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = K7VFV4F476;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = KVC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -453,7 +475,7 @@
 				CODE_SIGN_ENTITLEMENTS = KVC/KVC.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = K7VFV4F476;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = KVC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

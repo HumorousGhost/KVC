@@ -16,8 +16,8 @@
 
     // Do any additional setup after loading the view.
     Person *person = [[Person alloc] init];
-//    [person customSetValue:@"aaa" forKey:@"name"];
-    NSString *name = [person customValueForKey:@"name"];
+    [person customSetValue:@"aaa" forKey:@"sex"];
+    NSString *name = [person customValueForKey:@"sex"];
     NSLog(@"name = %@", name);
 }
 
